@@ -1660,11 +1660,13 @@ body.home.blog #site-content {
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 0;
 }
 
 .post-categories li {
-    margin-top: 0.3rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .post-categories li a {
@@ -2694,7 +2696,7 @@ aside#secondary {
     transition: all 0.2s linear;
     position: absolute;
     z-index: 99;
-    width: 230px;
+    width: 180px;
     background-color: #fff;
     padding: 1.5rem 0;
     box-shadow: -1px 2px 19px 3px rgba(14, 0, 40, 0.05);
@@ -2993,6 +2995,7 @@ aside#secondary {
 
 .fansee-business-services-section {
     padding: 110px 0 200px;
+    overflow: hidden;
     position: relative;
 }
 
@@ -3119,6 +3122,7 @@ aside#secondary {
 
 .fansee-business-team-section {
     padding-bottom: 120px;
+    overflow: hidden;
     position: relative;
 }
 
@@ -3298,6 +3302,7 @@ aside#secondary {
 .fansee-business-news-section {
     padding: 120px 0;
     position: relative;
+    overflow: hidden;
 }
 
 .fansee-business-news-section>svg {
@@ -3493,6 +3498,7 @@ aside#secondary {
 .fansee-business-testimonials-section {
     padding-bottom: 120px;
     position: relative;
+    overflow: hidden;
 }
 
 .fansee-business-testimonials-section>svg {

@@ -4,8 +4,8 @@ Author: fanseethemes
 Requires at least: 5.0
 Tested up to: WordPress 5.5
 Requires PHP: 5.6
-Stable tag: 1.5
-Version: 1.5
+Stable tag: 1.6
+Version: 1.6
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: right-sidebar, wide-blocks, block-styles, grid-layout, two-columns, flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, threaded-comments, translation-ready, news, education, entertainment   
@@ -128,3 +128,6 @@ Note:
 = 1.5 =
 * Fixed sub title issue in team archive page
 * General Fixing
+
+= 1.6 =
+* Added recommended plugin

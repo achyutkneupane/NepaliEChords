@@ -37,6 +37,7 @@ $fansee_business_modules = array(
 	'scripts',
 	'theme-setup',
 	'fields',
+	'tgm',
 	'css'
 );
 

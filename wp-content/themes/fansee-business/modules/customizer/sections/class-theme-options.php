@@ -11,6 +11,7 @@ if( !class_exists( 'Fansee_Business_Theme_Options_Customizer' ) ){
 		public function __construct( $panel ){
 
 			$this->fields = array(
+				
 				array(
 				    'id'     => 'typography',
 				    'title'  => esc_html__( 'Typography','fansee-business' ),

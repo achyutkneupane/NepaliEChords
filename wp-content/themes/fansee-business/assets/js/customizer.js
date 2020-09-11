@@ -59,6 +59,13 @@ jQuery(document).ready(function () {
         }
     });
 
+    api.sectionConstructor["fansee-business-link"] = api.Section.extend({
+        attachEvents: function() {},
+        isContextuallyActive: function() {
+            return !0
+        }
+    });
+
     api.controlConstructor['fansee-business-page-repeater'] = api.Control.extend({
         ready: function ready() {
             'use strict';

@@ -11,6 +11,7 @@ function fansee_business_customizer_files( $files ){
 		'controls/toggle/class-toggle.php',
 		'controls/page-repeater/class-page-repeater.php',
 		'controls/slider/class-slider.php',
+		'controls/link/class-link.php',
 
 		# theme options
 		'sections/class-frontpage.php',
@@ -35,6 +36,19 @@ function fansee_business_get( $id ){
  */
 function fansee_business_customizer_register( $wp_customize ){
 
+	$cus = new Fansee_Business_Customizer();
+	$cus->fields = array(
+		array(
+			'id'       => 'go-to-pro',
+			'title'    => esc_html__( 'Need More Features ? - Buy Pro', 'fansee-business' ),
+			'type'     => 'link',
+			'url'      => esc_url( 'fanseethemes.com/downloads/fansee-business-pro/' ),
+			'priority' => 0
+		)
+	);
+	
+	$cus->add();
+
 	$panel = array(
 		'id' => Fansee_Business_Customizer::get_id( 'frontpage' ),
 		'args' => array(
@@ -52,6 +66,9 @@ function fansee_business_customizer_register( $wp_customize ){
 		)
 	);
 	new Fansee_Business_Theme_Options_Customizer( $panel );
+
+
+
 	
 }
 add_action( 'init', 'fansee_business_customizer_register' );

@@ -1,3 +1,17 @@
+li#accordion-section-fansee-business-go-to-pro h3 {
+    margin: 0;
+}
+
+li#accordion-section-fansee-business-go-to-pro h3 a {
+    display: block;
+    text-align: center;
+    background: #007cba;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 400;
+}
+
 .customize-control-fansee-business-toggle {
     margin-bottom: 0;
 }

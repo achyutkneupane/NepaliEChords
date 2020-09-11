@@ -157,97 +157,119 @@ if( !class_exists( 'Fansee_Business_Customizer' ) ){
 				if(! in_array( $section[ 'id' ], self::$default_sections ) ){
 					$section_id = self::get_id( $section[ 'id' ] );
 
-					$wp_customize->add_section( $section_id, array(
+					$section_args = array(
 						'title' => $section[ 'title' ],
 						'panel' => $panel
-					));
+					);
+
+					if( isset( $section[ 'priority' ] ) ){
+						$section_args[ 'priority' ] = $section[ 'priority' ];
+					}
+
+					if( isset( $section[ 'url' ] ) ){
+						$section_args[ 'url' ] = $section[ 'url' ];
+					}
+					
+					if( isset( $section[ 'type' ] ) && $section[ 'type' ] == 'link' ){
+						$wp_customize->add_section( new Fansee_Business_Customizer_Link_Control( $wp_customize, $section_id, $section_args ) );
+					}else{
+						$wp_customize->add_section( $section_id, $section_args );
+					}
 				}else{
 					$section_id = $section[ 'id' ];
 				}
 
 				$settings_control = array();
-				foreach( $section[ 'fields' ] as $field ){
+				if( isset( $section[ 'fields' ] ) ){
+					foreach( $section[ 'fields' ] as $field ){
 
-					$id = self::get_id( $field[ 'id' ] );
+						$id = self::get_id( $field[ 'id' ] );
 
-				    if( $field[ 'type' ] == 'slider' ){
-				    	foreach( array( 'mobile', 'tablet', 'desktop' ) as $device ){
-				    		
-				    		$nid = $id . '-' . $device;
+					    if( $field[ 'type' ] == 'slider' ){
+					    	foreach( array( 'mobile', 'tablet', 'desktop' ) as $device ){
+					    		
+					    		$nid = $id . '-' . $device;
 
-				    		$wp_customize->add_setting( $nid, array(
-				    	        'default'           => self::$defaults[ $nid ],
+					    		$wp_customize->add_setting( $nid, array(
+					    	        'default'           => self::$defaults[ $nid ],
+					    	        'sanitize_callback' => self::get_sanitizer( $field[ 'type' ] ),
+					    	        'transport'         => 'refresh'
+					    	    ));
+					    		
+					    		$settings_control[ $device ] = $nid;
+					    	}
+					    }else{
+
+							$wp_customize->add_setting( $id, array(
+				    	        'default'           => self::$defaults[ $id ],
 				    	        'sanitize_callback' => self::get_sanitizer( $field[ 'type' ] ),
 				    	        'transport'         => 'refresh'
 				    	    ));
-				    		
-				    		$settings_control[ $device ] = $nid;
-				    	}
-				    }else{
+					    }
 
-						$wp_customize->add_setting( $id, array(
-			    	        'default'           => self::$defaults[ $id ],
-			    	        'sanitize_callback' => self::get_sanitizer( $field[ 'type' ] ),
-			    	        'transport'         => 'refresh'
-			    	    ));
-				    }
+						$control = array(
+					        'label'   => $field[ 'label' ],
+					        'type'    => $field[ 'type' ],
+					        'section' => $section_id
+					    );
 
-					$control = array(
-				        'label'   => $field[ 'label' ],
-				        'type'    => $field[ 'type' ],
-				        'section' => $section_id
-				    );
+						if( isset( $field[ 'active_callback' ] ) ){
+							$control[ 'active_callback' ] = $field[ 'active_callback' ];
+						}
 
-					if( isset( $field[ 'active_callback' ] ) ){
-						$control[ 'active_callback' ] = $field[ 'active_callback' ];
-					}
+						if( isset( $field[ 'description' ] ) ){
+							$control[ 'description' ] = $field[ 'description' ];
+						}
 
-					if( isset( $field[ 'description' ] ) ){
-						$control[ 'description' ] = $field[ 'description' ];
-					}
+						if( isset( $field[ 'limit' ] ) ){
+							$control[ 'limit' ] = $field[ 'limit' ];
+						}
 
-					if( isset( $field[ 'limit' ] ) ){
-						$control[ 'limit' ] = $field[ 'limit' ];
-					}
+						if( isset( $field[ 'choices' ] ) ){
+							$control[ 'choices' ] = $field[ 'choices' ];
+						}
 
-					if( isset( $field[ 'choices' ] ) ){
-						$control[ 'choices' ] = $field[ 'choices' ];
-					}
+						if( isset( $field[ 'input_attrs' ] ) ){
+							$control[ 'input_attrs' ] =  $field['input_attrs'];
+						}
 
-					if( isset( $field[ 'input_attrs' ] ) ){
-						$control[ 'input_attrs' ] =  $field['input_attrs'];
-					}
+						switch( $control[ 'type' ] ){
 
-					switch( $control[ 'type' ] ){
+							case 'toggle':
+								$control[ 'type' ] = self::get_id( $control[ 'type' ] );
+								$wp_customize->add_control( new Fansee_Business_Toggle_Control( $wp_customize, $id, $control ) );
+							break;
 
-						case 'toggle':
-							$control[ 'type' ] = self::get_id( $control[ 'type' ] );
-							$wp_customize->add_control( new Fansee_Business_Toggle_Control( $wp_customize, $id, $control ) );
-						break;
+							case 'page-repeater':
+								$control[ 'type' ] = self::get_id( $control[ 'type' ] );
+								$wp_customize->add_control( new Fansee_Business_Page_Repeater( $wp_customize, $id, $control ) );
+							break;
 
-						case 'page-repeater':
-							$control[ 'type' ] = self::get_id( $control[ 'type' ] );
-							$wp_customize->add_control( new Fansee_Business_Page_Repeater( $wp_customize, $id, $control ) );
-						break;
+							case 'slider':
+								$control[ 'type' ] = self::get_id( $control[ 'type' ] );
+								if( !isset( $control[ 'input_attrs' ] ) ){
+									$control[ 'input_attrs' ] =  array(
+						                'min'   => 0,
+						                'max'   => 100,
+						                'step'  => 1,
+						            );
+								}
+								$control[ 'settings' ] = $settings_control;
+								$wp_customize->add_control( new Fansee_Business_Customizer_Slider_Control( $wp_customize, $id, $control ) );
+							break;
 
-						case 'slider':
-							$control[ 'type' ] = self::get_id( $control[ 'type' ] );
-							if( !isset( $control[ 'input_attrs' ] ) ){
-								$control[ 'input_attrs' ] =  array(
-					                'min'   => 0,
-					                'max'   => 100,
-					                'step'  => 1,
-					            );
-							}
-							$control[ 'settings' ] = $settings_control;
-							$wp_customize->add_control( new Fansee_Business_Customizer_Slider_Control( $wp_customize, $id, $control ) );
-						break;
+							case 'link':
+								$control[ 'type' ] = self::get_id( $control[ 'type' ] );
+								$wp_customize->add_control( new Fansee_Businiess_Customizer_Link_Control( $wp_customize, $id, $control ) );
+							break;
 
-						default:
-				    		$wp_customize->add_control( $id, $control );	
-						break;
+							default:
+					    		$wp_customize->add_control( $id, $control );	
+							break;
+						}
 					}
 				}
+
 			}
 		}
 
@@ -255,20 +277,23 @@ if( !class_exists( 'Fansee_Business_Customizer' ) ){
 			$this->panel = $panel;
 			add_action( 'customize_register', array( $this, 'register' ) );
 			foreach ( $this->fields as  $section ) {
-				foreach( $section[ 'fields' ] as $field ){
-					$id = self::get_id( $field[ 'id' ] );
-				    if( $field[ 'type' ] == 'slider' ){
-				    	foreach( array( 'mobile', 'tablet', 'desktop' ) as $device ){
-				    		
-				    		$nid = $id . '-' . $device;
 
-				    		if( isset( $field[ 'default' ] ) ){
-				    			self::$defaults[ $nid ] = $field[ 'default' ][ $device ];
-				    		}
-				    	}
-				    }else{
-						self::$defaults[ $id ] = isset( $field[ 'default' ] ) ? $field[ 'default' ] : false;
-				    }
+				if( isset( $section[ 'fields' ] ) ){
+					foreach( $section[ 'fields' ] as $field ){
+						$id = self::get_id( $field[ 'id' ] );
+					    if( $field[ 'type' ] == 'slider' ){
+					    	foreach( array( 'mobile', 'tablet', 'desktop' ) as $device ){
+					    		
+					    		$nid = $id . '-' . $device;
+
+					    		if( isset( $field[ 'default' ] ) ){
+					    			self::$defaults[ $nid ] = $field[ 'default' ][ $device ];
+					    		}
+					    	}
+					    }else{
+							self::$defaults[ $id ] = isset( $field[ 'default' ] ) ? $field[ 'default' ] : false;
+					    }
+					}
 				}
 			}
 		}
