@@ -17,7 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200;500&family=Yanone+Kaffeesatz:wght@300&display=swap");
 
 body {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #e3e3e3;
 }
 
 .box-shadow-full {
@@ -203,6 +203,9 @@ body {
 }
 
 /* BLOG SECTION*/
+.blogSection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .blogSection .container {
   background-color: #fff;

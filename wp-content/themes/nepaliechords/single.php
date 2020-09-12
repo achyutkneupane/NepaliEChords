@@ -11,14 +11,14 @@ if (has_post_thumbnail()) {
 }
 ?>
 <div class="darkOverlay"></div>
-<div class="titleBox display-table">
+<div class="singlePage titleBox display-table">
     <div class="table-cell">
         <h1 class="text-light display-1"><?php the_title(); ?></h1>
-        <span class="text-light"><?php the_category(); ?></span>
+        <div class="text-center"><?php the_category(); ?></div>
     </div>
 </div>
 </div>
-<?php get_template_part('inc/page', 'single'); ?>
 <?php
+get_template_part('inc/page', 'single');
 get_footer();
 ?>

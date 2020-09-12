@@ -31,7 +31,7 @@ function nec_scriptfetch()
 }
 add_action('wp_enqueue_scripts', 'nec_scriptfetch');
 
-function get_cat_post($categoryName)
+function get_catg_post($categoryName)
 {
     $getCat_query = new WP_Query(array(
         'category_name' => $categoryName,
@@ -40,7 +40,7 @@ function get_cat_post($categoryName)
     ));
     if ($getCat_query->have_posts()) :
         while ($getCat_query->have_posts()) : $getCat_query->the_post();
-            echo ("<div class='container my-2 blogFetch'>
+            echo ("<div class='container my-3 blogFetch box-shadow-full' style='background-color: #f6f6f6;'>
                     <div class='row'>
                         <div class='col-md-3 justify-content-center'>
                         <img src='");
@@ -73,3 +73,4 @@ function get_cat_post($categoryName)
         __('No News');
     endif;
 }
+add_theme_support('post-thumbnails');
