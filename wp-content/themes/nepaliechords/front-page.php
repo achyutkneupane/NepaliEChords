@@ -7,17 +7,13 @@ get_header();
     <div class="darkOverlay"></div>
     <div class="titleBox display-table" id="TitleBox">
         <div class="table-cell">
-            <h1 class="text-light display-1">Nepali E-Chords</h1>
+            <h1 class="text-light display-1"><?php bloginfo('name'); ?></h1>
             <hr />
             <h3 class="text-light mt-3 subTitle">
-                Namaskar! Nepali E-Chords ma swagat chha!
+                <?php bloginfo('description'); ?>
             </h3>
             <div class="subtext text-light">
-                Hello! Welcome to Nepali E-Chords – the first guitar site to offer
-                comprehensive guitar lessons of popular Nepali songs online, and that
-                too without any cost whatsoever. Although majority of the guitar lessons
-                here are suitable for students of all skill levels, the beginners and
-                intermediate students will probably find these lessons more useful.
+                <?php the_content(); ?>
             </div>
         </div>
     </div>
@@ -50,33 +46,45 @@ get_header();
                 <div class="tab-content" id="nepaliechords-articles-tabContent">
                     <div class="tab-pane fade show active" id="nepaliechords-news" role="tabpanel"
                         aria-labelledby="nepaliechords-news-tab">
-                        <div class="row justify-content-end border-primary">
-                            <div class="col-5 align-self-end">
-                                <a href="/" class="btn btn-outline-dark">View All News</a>
+                        <div class="row justify-content-end">
+                            <div class="col-5">
+                                <a href="/" class="btn btn-outline-dark float-right">View All News</a>
+                            </div>
+                            <div class="col-md-12">
+                                <?php get_cat_post('news'); ?>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nepaliechords-release" role="tabpanel"
                         aria-labelledby="nepaliechords-release-tab">
-                        <div class="row justify-content-end border-primary">
+                        <div class="row justify-content-end">
                             <div class="col-5 align-self-end">
-                                <a href="/" class="btn btn-outline-dark">View All Releases</a>
+                                <a href="/" class="btn btn-outline-dark float-right">View All Releases</a>
+                            </div>
+                            <div class="col-md-12">
+                                <?php get_cat_post('new-release'); ?>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nepaliechords-interviews" role="tabpanel"
                         aria-labelledby="nepaliechords-interviews-tab">
-                        <div class="row justify-content-end border-primary">
+                        <div class="row justify-content-end">
                             <div class="col-5 align-self-end">
-                                <a href="/" class="btn btn-outline-dark">View All Interviews</a>
+                                <a href="/" class="btn btn-outline-dark float-right">View All Interviews</a>
+                            </div>
+                            <div class="col-md-12">
+                                <?php get_cat_post('interview') ?>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nepaliechords-events" role="tabpanel"
                         aria-labelledby="nepaliechords-events-tab">
-                        <div class="row justify-content-end border-primary">
+                        <div class="row justify-content-end">
                             <div class="col-5 align-self-end">
-                                <a href="/" class="btn btn-outline-dark">View All Events</a>
+                                <a href="/" class="btn btn-outline-dark float-right">View All Events</a>
+                            </div>
+                            <div class="col-md-12">
+                                <?php get_cat_post('events'); ?>
                             </div>
                         </div>
                     </div>

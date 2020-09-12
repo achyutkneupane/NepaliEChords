@@ -129,6 +129,13 @@ body {
   background: #fff;
   border: 1px solid #fff;
 }
+.navbar-trans .dropdown-menu {
+  background: #fff;
+  border: 1px solid #fff;
+}
+.navbar-trans .dropdown-menu a {
+  color: #000;
+}
 .navbar-reduce .navbar-brand,
 .navbar-non-coll .navbar-brand {
   margin-top: 10px;
@@ -157,7 +164,7 @@ body {
   background-size: cover;
   background-position: center center;
 }
-.homeSection .darkOverlay {
+.darkOverlay {
   background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
   top: 0;
@@ -200,6 +207,22 @@ body {
 .blogSection .container {
   background-color: #fff;
 }
+.pageSection {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+.pageSection .titleBox {
+  text-align: center;
+  top: 40%;
+  position: absolute;
+}
+.archiveTitle {
+  font-family: "Anton", sans-serif;
+}
+.archiveText {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
 @media (max-width: 768px) {
   .titleBox .display-1 {
     font-size: 3.2rem;
@@ -224,6 +247,9 @@ body {
     left: 10vw;
     width: 80vw;
     font-size: 1.3rem;
+  }
+  .pageSection .titleBox {
+    top: 30%;
   }
 }
 @media (max-width: 340px) {
