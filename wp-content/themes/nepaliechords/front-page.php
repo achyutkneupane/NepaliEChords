@@ -1,7 +1,6 @@
 <?php
 get_header();
 ?>
-
 <div class="homeSection bgImage" style="
   background-image: url('/wp-content/themes/nepaliechords/assets/imgs/backgroundImage.jpg');">
     <div class="darkOverlay"></div>
@@ -46,65 +45,49 @@ get_header();
                 <div class="tab-content" id="nepaliechords-articles-tabContent">
                     <div class="tab-pane fade show active" id="nepaliechords-news" role="tabpanel"
                         aria-labelledby="nepaliechords-news-tab">
-                        <div class="row justify-content-end">
-                            <div class="col-md-5">
-                                <a href="<?php echo (esc_url(get_category_link(get_cat_ID('news')))); ?>"
-                                    class="btn btn-outline-dark float-right">View All News</a>
-                            </div>
+                        <div class="row">
                             <div class="col-md-12">
                                 <?php get_catg_post('news'); ?>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-12 text-center">
                                 <a href="<?php echo (esc_url(get_category_link(get_cat_ID('news')))); ?>"
-                                    class="btn btn-outline-dark float-right">View All News</a>
+                                    class="btn btn-outline-dark">View All News</a>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nepaliechords-release" role="tabpanel"
                         aria-labelledby="nepaliechords-release-tab">
-                        <div class="row justify-content-end">
-                            <div class="col-md-5">
-                                <a href="<?php echo (esc_url(get_category_link(get_cat_ID('new-release')))); ?>"
-                                    class="btn btn-outline-dark float-right">View All Releases</a>
-                            </div>
+                        <div class="row">
                             <div class="col-md-12">
-                                <?php get_catg_post('new-release'); ?>
+                                <?php get_catg_post('new-releases'); ?>
                             </div>
-                            <div class="col-md-5">
-                                <a href="<?php echo esc_url(get_category_link(get_cat_ID('new-release'))); ?>"
-                                    class="btn btn-outline-dark float-right">View All Releases</a>
+                            <div class="col-md-12 text-center">
+                                <a href="<?php echo esc_url(get_category_link('7')); ?>"
+                                    class="btn btn-outline-dark">View All Releases</a>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nepaliechords-interviews" role="tabpanel"
                         aria-labelledby="nepaliechords-interviews-tab">
-                        <div class="row justify-content-end">
-                            <div class="col-md-5">
-                                <a href="<?php echo get_cat_ID('interview'); ?>"
-                                    class="btn btn-outline-dark float-right">View All Interviews</a>
-                            </div>
+                        <div class="row">
                             <div class="col-md-12">
                                 <?php get_catg_post('interview') ?>
                             </div>
-                            <div class="col-md-5">
-                                <a href="<?php echo esc_url(get_category_link(get_cat_ID('interview'))); ?>"
-                                    class="btn btn-outline-dark float-right"><?php get_category_link(get_cat_ID('interview')); ?></a>
+                            <div class="col-md-12 text-center">
+                                <a href="<?php echo esc_url(get_category_link(get_cat_ID('interviews'))); ?>"
+                                    class="btn btn-outline-dark">View All Interviews</a>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="nepaliechords-events" role="tabpanel"
                         aria-labelledby="nepaliechords-events-tab">
-                        <div class="row justify-content-end">
-                            <div class="col-md-5">
-                                <a href="<?php echo esc_url(get_category_link(get_cat_ID('events'))); ?>"
-                                    class="btn btn-outline-dark float-right">View All Events</a>
-                            </div>
+                        <div class="row">
                             <div class="col-md-12">
                                 <?php get_catg_post('events'); ?>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-12 text-center">
                                 <a href="<?php echo esc_url(get_category_link(get_cat_ID('events'))); ?>"
-                                    class="btn btn-outline-dark float-right">View All Events</a>
+                                    class="btn btn-outline-dark">View All Events</a>
                             </div>
                         </div>
                     </div>
