@@ -14,12 +14,12 @@ if (has_post_thumbnail()) {
 <div class="singlePage titleBox display-table">
     <div class="table-cell">
         <h1 class="text-light display-4"><?php the_title(); ?></h1>
-        <div class="text-center"><?php the_category(', '); ?></div>
+        <div class="text-center pageText"><?php the_category(', '); ?></div>
         <?php
         $post_tags = get_the_tags();
 
         if ($post_tags) {
-            echo ("<div class='text-center'><span class='text-light h4'>Tags:</span> ");
+            echo ("<div class='text-center pageText'><span class='text-light h4 pageText'>Tags:</span> ");
             foreach ($post_tags as $tag) {
                 if (count($post_tags) > 1) {
                     echo '<a href="' . get_tag_link($tag->term_id) . '">' . ucwords($tag->name) . '</a>, ';
