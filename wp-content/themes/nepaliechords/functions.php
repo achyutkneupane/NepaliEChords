@@ -139,3 +139,4 @@ function nepaliechords_time_ago()
     return $output;
 }
 add_filter('the_time', 'nepaliechords_time_ago');
+add_filter('get_the_time', 'nepaliechords_time_ago');
