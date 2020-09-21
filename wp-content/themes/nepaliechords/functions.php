@@ -53,6 +53,10 @@ function get_catg_post($categoryName)
             echo ("</h3>
                 </div>
                 <div class='row'>
+                <div class='col-md-12  text-muted'>");
+            the_time();
+            echo ("</div></div>
+                <div class='row'>
                     <div class='col-md-12 archiveText'>");
             the_excerpt();
             echo ("</div>
@@ -74,3 +78,64 @@ function get_catg_post($categoryName)
     endif;
 }
 add_theme_support('post-thumbnails');
+
+function nepaliechords_widgets_init()
+{
+
+    register_sidebar(array(
+        'name' => 'Sidebar',
+        'id' => 'sidebar',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="text-center mb-5">',
+        'after_title' => '</h4>',
+    ));
+}
+add_action('widgets_init', 'nepaliechords_widgets_init');
+
+function nepaliechords_time_ago()
+{
+
+    global $post;
+
+    $date = get_post_time('G', true, $post);
+    $chunks = array(
+        array(60 * 60 * 24 * 365, __('year', 'nepaliechords'), __('years', 'nepaliechords')),
+        array(60 * 60 * 24 * 30, __('month', 'nepaliechords'), __('months', 'nepaliechords')),
+        array(60 * 60 * 24 * 7, __('week', 'nepaliechords'), __('weeks', 'nepaliechords')),
+        array(60 * 60 * 24, __('day', 'nepaliechords'), __('days', 'nepaliechords')),
+        array(60 * 60, __('hour', 'nepaliechords'), __('hours', 'nepaliechords')),
+        array(60, __('minute', 'nepaliechords'), __('minutes', 'nepaliechords')),
+        array(1, __('second', 'nepaliechords'), __('seconds', 'nepaliechords'))
+    );
+
+    if (!is_numeric($date)) {
+        $time_chunks = explode(':', str_replace(' ', ':', $date));
+        $date_chunks = explode('-', str_replace(' ', '-', $date));
+        $date = gmmktime((int)$time_chunks[1], (int)$time_chunks[2], (int)$time_chunks[3], (int)$date_chunks[1], (int)$date_chunks[2], (int)$date_chunks[0]);
+    }
+
+    $current_time = current_time('mysql', $gmt = 0);
+    $newer_date = strtotime($current_time);
+
+    $since = $newer_date - $date;
+
+    if (0 > $since)
+        return __('sometime', 'nepaliechords');
+    for ($i = 0, $j = count($chunks); $i < $j; $i++) {
+        $seconds = $chunks[$i][0];
+        if (($count = floor($since / $seconds)) != 0)
+            break;
+    }
+    $output = (1 == $count) ? '1 ' . $chunks[$i][1] : $count . ' ' . $chunks[$i][2];
+
+
+    if (!(int)trim($output)) {
+        $output = '0 ' . __('seconds', 'nepaliechords');
+    }
+
+    $output .= __(' ago', 'nepaliechords');
+
+    return $output;
+}
+add_filter('the_time', 'nepaliechords_time_ago');

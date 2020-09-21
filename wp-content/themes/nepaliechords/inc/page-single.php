@@ -10,7 +10,7 @@
                         ?>
             </div>
             <div class="col-md-4 box-shadow-full my-3 mx-2">
-                SIDEBAR
+                <?php get_sidebar('sidebar'); ?>
             </div>
         </div>
     </div>

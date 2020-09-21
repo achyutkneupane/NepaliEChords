@@ -1,12 +1,12 @@
 <?php
 get_header();
 if (has_post_thumbnail()) {
-    echo '<div class="pageSection bgImage" style="
+    echo '<div class="archiveSection bgImage" style="
     background-image: url(';
-    the_post_thumbnail();
+    the_post_thumbnail_url();
     echo ');">';
 } else {
-    echo '<div class="pageSection bgImage" style="
+    echo '<div class="archiveSection bgImage" style="
     background-image: url(' . "/wp-content/themes/nepaliechords/assets/imgs/backgroundImage.jpg" . ');">';
 }
 ?>
