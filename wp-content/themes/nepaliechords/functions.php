@@ -53,8 +53,10 @@ function get_catg_post($categoryName)
             echo ("</h3>
                 </div>
                 <div class='row'>
-                <div class='col-md-12  text-muted'>");
+                <div class='col-md-12 text-muted blackLink'>");
             the_time();
+            echo (" by ");
+            the_author_posts_link();
             echo ("</div></div>
                 <div class='row'>
                     <div class='col-md-12 archiveText'>");
