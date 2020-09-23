@@ -1,12 +1,20 @@
 <?php
 get_header();
-echo '<div class="archiveSection bgImage" style="
+if (has_post_thumbnail()) {
+    echo '<div class="pageSection bgImage" style="
+    background-image: url(';
+    the_post_thumbnail_url();
+    echo ');">';
+} else {
+    echo '<div class="pageSection bgImage" style="
     background-image: url(' . "/wp-content/themes/nepaliechords/assets/imgs/backgroundImage.jpg" . ');">';
+}
 ?>
 <div class="darkOverlay"></div>
 <div class="titleBox display-table">
     <div class="table-cell">
-        <h1 class="text-light display-1"><?php single_term_title();  ?></h1>
+        <?php echo (get_the_archive_title()); ?>
+
     </div>
 </div>
 </div>

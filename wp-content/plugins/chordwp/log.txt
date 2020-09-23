@@ -1,0 +1,408 @@
+========== 09/22/2020 10:29:11 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\chordwp.php :: Line: 108
+Activate ChordWP!
+
+========== 09/22/2020 10:31:15 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 09/22/2020 10:44:13 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 99
+Not saving song box because this is a post revision
+
+========== 09/22/2020 10:46:13 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 99
+Not saving song box because this is a post revision
+
+========== 09/22/2020 10:46:26 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 122
+Deleting post meta
+
+========== 09/22/2020 10:47:03 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 122
+Deleting post meta
+
+========== 09/22/2020 10:47:51 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 117
+Updating post meta
+
+========== 09/22/2020 10:52:51 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 117
+Updating post meta
+
+========== 09/22/2020 10:54:35 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 09/22/2020 10:58:03 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 122
+Deleting post meta
+
+========== 09/22/2020 10:59:02 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 09/23/2020 10:00:04 AM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 09/23/2020 10:17:48 AM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 09/23/2020 10:21:46 AM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 09/23/2020 10:24:11 AM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 09/23/2020 10:26:07 AM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 09/23/2020 10:26:16 AM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 09/23/2020 10:26:41 AM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 09/23/2020 10:28:01 AM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 09/23/2020 10:28:27 AM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 117
+Updating post meta
+
+========== 09/23/2020 11:24:24 AM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 122
+Deleting post meta
+
+========== 09/23/2020 2:08:05 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 123
+Updating post meta
+
+========== 09/23/2020 2:11:47 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 123
+Updating post meta
+
+========== 09/23/2020 3:28:54 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 3:29:27 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 3:29:50 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 3:29:51 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 3:29:51 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 3:29:51 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 3:29:51 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 3:29:51 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 3:29:52 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 3:29:52 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 3:29:52 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 6:37:44 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 6:38:08 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 6:38:51 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 123
+Updating post meta
+
+========== 09/23/2020 6:44:32 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 7:21:53 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 7:22:06 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 7:25:29 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 7:25:34 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 7:25:40 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 7:25:45 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 7:27:18 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 7:28:36 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 7:29:23 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 7:29:58 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 7:29:58 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 7:30:18 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 7:30:40 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 7:34:07 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 7:34:42 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 7:36:02 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 7:36:10 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 7:36:59 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 7:37:03 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 7:39:45 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 9:55:23 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:04:11 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:13:11 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:19:28 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:19:46 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:19:51 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:22:03 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:22:03 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:25:34 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:25:35 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:26:35 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:26:42 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:26:44 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:27:30 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:28:45 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:29:59 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:30:03 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:30:03 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:40:36 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:40:40 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:41:42 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:41:54 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:41:59 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:42:02 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:42:05 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:42:08 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:42:12 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:42:14 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:42:17 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:42:19 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:42:31 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:42:31 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:43:08 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:43:08 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:45:42 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:46:17 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 105
+Not saving song box because this is a post revision
+
+========== 09/23/2020 10:46:25 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:46:31 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:47:44 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:47:45 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:49:42 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 10:50:07 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 11:05:00 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+
+========== 09/23/2020 11:05:07 PM  ==========
+File: C:\xampp\nec\htdocs\wp-content\plugins\chordwp\includes\class-crd-sheet-music.php :: Line: 111
+Failed nonce verification
+

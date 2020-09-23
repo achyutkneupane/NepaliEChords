@@ -12,7 +12,7 @@ get_header();
                 <?php bloginfo('description'); ?>
             </h3>
             <div class="subtext text-light">
-                <?php the_content(); ?>
+                <?php echo (get_the_content()); ?>
             </div>
         </div>
     </div>

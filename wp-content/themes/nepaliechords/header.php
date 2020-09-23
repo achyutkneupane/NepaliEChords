@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Nepali E-Chords -->
+<!-- Developed by -->
+<!-- Achyut Neupane -->
+<!-- https://facebook.com/achyutkneupane -->
 
 <head>
     <meta charset="UTF-8">

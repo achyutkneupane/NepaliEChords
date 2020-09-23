@@ -48,9 +48,11 @@ function get_catg_post($categoryName)
             echo ("' style='height: 100%; width: 100%; object-fit: contain;'></div>
             <div class='col-md-9 justify-content-left'>
                 <div class='row'>
-                    <h3 class='col-md-12 archiveTitle'>");
+                    <h3 class='col-md-12 archiveTitle blackLink'><a href='");
+            the_permalink();
+            echo ("'>");
             the_title();
-            echo ("</h3>
+            echo ("</a></h3>
                 </div>
                 <div class='row'>
                 <div class='col-md-12 text-muted blackLink'>");
@@ -85,7 +87,7 @@ function nepaliechords_widgets_init()
 {
 
     register_sidebar(array(
-        'name' => 'Sidebar',
+        'name' =>  __('Posts Bar', 'nepaliechords'),
         'id' => 'sidebar',
         'before_widget' => '<div>',
         'after_widget' => '</div>',
@@ -142,3 +144,28 @@ function nepaliechords_time_ago()
 }
 add_filter('the_time', 'nepaliechords_time_ago');
 add_filter('get_the_time', 'nepaliechords_time_ago');
+
+add_filter('get_the_archive_title', function ($title) {
+    if (is_category()) {
+        $title = "<h1 class='text-light display-1'>" . ucwords(single_tag_title('', false)) . "</h1>";
+    } elseif (is_tag()) {
+        $title = "<h1 class='text-light display-1'>" . ucwords(single_tag_title('', false)) . "</h1>";
+    } elseif (is_author()) {
+        $title = "<h1 class='text-light display-4'>Posts by " . ucwords(get_the_author()) . "</h1>";
+    } elseif (is_tax()) { //for custom post types
+        $title = sprintf(__('%1$s'), single_term_title('', false));
+    } elseif (is_post_type_archive()) {
+        $title = "<h1 class='text-light display-1'>" . ucwords(post_type_archive_title('', false)) . "</h1>";
+    }
+    return $title;
+});
+
+function default_comments_on($data)
+{
+    if ($data['post_type'] == 'crd_sheet_music') {
+        $data['comment_status'] = 1;
+    }
+
+    return $data;
+}
+add_filter('wp_insert_post_data', 'default_comments_on');
