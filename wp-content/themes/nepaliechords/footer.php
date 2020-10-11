@@ -88,10 +88,15 @@ if (is_user_logged_in()) {
                     document.getElementById("mainNav").style.top = "0";
                 }
                 else {
-                    document.getElementById("mainNav").style.top = "20px";
+                    document.getElementById("mainNav").style.top = "32px";
                 }
             } else {
-                document.getElementById("mainNav").style.top = "32px";
+                if ($(window).width() < 768) {
+                    document.getElementById("mainNav").style.top = "32px";
+                }
+                else {
+                    document.getElementById("mainNav").style.top = "18px";
+                }
             }   
             });
         </script>

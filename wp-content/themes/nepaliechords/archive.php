@@ -1,7 +1,7 @@
 <?php
 get_header();
 if (has_post_thumbnail()) {
-    echo '<div class="pageSection bgImage" style="
+    echo '<div class="jumbotron pageSection bgImage d-flex align-items-center" style="
     background-image: url(';
     the_post_thumbnail_url();
     echo ');">';
@@ -11,10 +11,13 @@ if (has_post_thumbnail()) {
 }
 ?>
 <div class="darkOverlay"></div>
-<div class="titleBox display-table">
-    <div class="table-cell">
-        <?php echo (get_the_archive_title()); ?>
-
+<div class="singlePage titleBox container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center text-light display-4">
+                <?php echo (get_the_archive_title()); ?>
+            </h1>
+        </div>
     </div>
 </div>
 </div>

@@ -25,7 +25,11 @@
     ?>
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div class="container-fluid">
-            <a class="navbar-brand h1 mx-auto" href="/"><?php bloginfo('name'); ?></a>
+            <a class="navbar-brand h1 mx-auto" href="/">
+                <?php
+                the_custom_logo();
+                ?>
+            </a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
                 aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
@@ -39,7 +43,7 @@
                 'container'       => 'div',
                 'container_class' => 'collapse navbar-collapse justify-content-end',
                 'container_id'    => 'navbarDefault',
-                'menu_class'      => 'navbar-nav',
+                'menu_class'      => 'navbar-nav align-top',
                 'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
                 'walker'          => new WP_Bootstrap_Navwalker(),
             ));

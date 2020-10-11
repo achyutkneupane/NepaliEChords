@@ -78,7 +78,15 @@ function get_catg_post($categoryName)
         endwhile;
         wp_reset_postdata();
     else :
-        __('No News');
+        echo ("
+        <div class='container my-3 blogFetch box-shadow-full' style='background-color: #f6f6f6;'>
+            <div class='row'>
+                <div class='col-md-12 h2 text-center'>
+                No Articles here
+                </div>
+            </div>
+        </div>
+        ");
     endif;
 }
 add_theme_support('post-thumbnails');
@@ -169,3 +177,17 @@ function default_comments_on($data)
     return $data;
 }
 add_filter('wp_insert_post_data', 'default_comments_on');
+
+function nepaliechords_custom_logo_setup()
+{
+    $defaults = array(
+        'height'      => 50,
+        'width'       => 200,
+        'flex-height' => false,
+        'flex-width'  => false,
+        'header-text' => array('site-title', 'site-description'),
+        'unlink-homepage-logo' => true,
+    );
+    add_theme_support('custom-logo', $defaults);
+}
+add_action('after_setup_theme', 'nepaliechords_custom_logo_setup');
