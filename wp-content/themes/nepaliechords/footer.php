@@ -29,7 +29,8 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 text h5">
-                                Most popular online portal in the Nepali music scene. Started 7 years ago as the first
+                                Most popular online portal in the Nepali music scene. Started
+                                <?php echo (date("Y") - 2012); ?> years ago as the first
                                 Nepali channel to offer comprehensive guitar lessons, over the years, we expanded our
                                 services in promoting, preserving and cultivating Nepali music like none others.
                             </div>

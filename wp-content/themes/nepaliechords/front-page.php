@@ -21,7 +21,7 @@ get_header();
 <div class="blogSection">
     <div class="container box-shadow-full my-5">
         <div class="row">
-            <div class="col-md-12 display-4 text-center pb-4">Articles</div>
+            <div class="col-md-12 display-4 text-center pb-4" style="color: #141446;">Articles</div>
         </div>
         <div class="row">
             <div class="col-3">

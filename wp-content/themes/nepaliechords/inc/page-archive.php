@@ -13,9 +13,9 @@
                         </div>
                         <div class='col-md-8'><a href='");
                         the_permalink();
-                        echo ("'><h5>");
+                        echo ("'><div class='h5 blackLink'>");
                         the_title();
-                        echo ("</h5></a>
+                        echo ("</div></a>
                         <div class='text-muted blackLink mt-2'>");
                         the_time();
                         echo (" by ");

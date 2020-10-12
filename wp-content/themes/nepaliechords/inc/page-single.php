@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-md-12 text-muted blackLink">
                         <?php
-                                echo ("<div class='text-muted mb-3 text-center'>");
+                                echo ("<div class='text-muted mb-3 text-left'>");
                                 the_time();
                                 echo (" by ");
                                 the_author_posts_link();

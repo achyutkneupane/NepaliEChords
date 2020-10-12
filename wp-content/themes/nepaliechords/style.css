@@ -123,14 +123,14 @@ body {
 .navbar-reduce {
   transition: all 0.5s ease-in-out;
   background-color: #fff;
-  color: #000;
+  color: #141446;
 }
 .custom-logo {
-  height: 8vw;
-  width: 14vw;
+  height: 65px;
+  width: 130px;
 }
 .navbar-reduce a {
-  color: #000;
+  color: #141446;
 }
 .navbar-reduce .dropdown-menu {
   background: #fff;
@@ -141,15 +141,15 @@ body {
   border: 1px solid #fff;
 }
 .navbar-trans .dropdown-menu a {
-  color: #000;
+  color: #141446;
 }
 .navbar-non-coll {
   transition: all 0.5s ease-in-out;
   background-color: #fff;
-  color: #000;
+  color: #141446;
 }
 .navbar-non-coll a {
-  color: #000;
+  color: #141446;
 }
 .navbar-non-coll .dropdown-menu {
   background: #fff;
@@ -168,7 +168,7 @@ body {
   background-position: center center;
 }
 .darkOverlay {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(20, 20, 70, 0.93);
   position: absolute;
   top: 0;
   left: 0px;
@@ -226,6 +226,9 @@ body {
 .archiveTitle {
   font-family: "Anton", sans-serif;
 }
+/* .archiveTitle a {
+  color: #bf1e2e !important;
+} */
 .archiveText {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
@@ -255,13 +258,14 @@ body {
   text-decoration: none;
 }
 .blackLink a {
-  color: #000;
+  color: #bf1e2e;
   text-decoration: none;
 }
-.contentSection .text-muted .text-center {
+.contentSection .text-muted .text-left {
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 20px;
 }
+
 blockquote {
   border-left: 5px solid #9c9c9c;
   padding-left: 20px;
@@ -360,12 +364,6 @@ div.gmail {
   box-shadow: 0px 4px 0px #777777;
   position: relative;
 }
-@media (max-width: 1050px) {
-  .custom-logo {
-    height: 10vw;
-    width: 18vw;
-  }
-}
 @media (max-width: 768px) {
   .titleBox .display-1 {
     font-size: 3.2rem;
@@ -377,11 +375,6 @@ div.gmail {
     left: 15vw;
     width: 70vw;
     font-size: 1.4rem;
-  }
-
-  .custom-logo {
-    height: 15vw;
-    width: 25vw;
   }
   .singlePage .display-4 {
     font-size: 30px;
@@ -402,10 +395,6 @@ div.gmail {
   .singlePage .display-4 {
     font-size: 20px;
   }
-  .custom-logo {
-    height: 20vw;
-    width: 30vw;
-  }
 }
 @media (max-width: 340px) {
   .titleBox .display-1 {
@@ -421,9 +410,5 @@ div.gmail {
   }
   .singlePage .display-4 {
     font-size: 25px;
-  }
-  .custom-logo {
-    height: 25vw;
-    width: 35vw;
   }
 }
